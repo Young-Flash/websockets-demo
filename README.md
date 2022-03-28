@@ -7,7 +7,10 @@ There are two threads, the main thread listen on  `ip:port` to wait websockets c
 
 # Setup
 
-You must make [uWebsockets](https://github.com/uNetworking/uWebSockets) and its dependency(uSockets, openssl, zlib, etc) ready in your dev machine. Noted that wss (websockets with ssl) are used here so you have to compile uWebsockets with ssl option (`WITH_OPENSSL=1 make`)
+You must make [uWebsockets](https://github.com/uNetworking/uWebSockets) and its dependency(uSockets, openssl, zlib, 
+etc) ready in your dev machine. Noted that wss (websockets with ssl) are used here so you have to compile 
+uWebsockets with ssl option (`WITH_OPENSSL=1 make`). You can take a look at my [blog](https://flash-flash.gitee.io/2022/03/27/uWebsockets%20%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85/) if you have problem on compiling and 
+install uWebsockets and uSockets.
 
 # Build
 
@@ -20,6 +23,8 @@ This demo can build with CMake easily
 `mkdir build && cd build`
 
 `cmake ..`
+
+`make`
 
 `./websocket-demo`
 
